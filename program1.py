@@ -12,13 +12,10 @@ class Solution(object):
         :type s: str
         :rtype: bool
         """
-        # Stack to keep track of opening brackets
         stack = []
         
-        # Dictionary to match closing brackets with opening brackets
         bracket_map = {')': '(', ']': '[', '}': '{'}
         
-        # Traverse the input string
         for char in s:
             if char in bracket_map:
                 top_element = stack.pop() if stack else '#'
