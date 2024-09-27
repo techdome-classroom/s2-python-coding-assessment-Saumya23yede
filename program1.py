@@ -7,11 +7,8 @@ class Solution(object):
         pass
 
 def isValid(s: str) -> bool:
-    # Stack for left symbols
     leftSymbols = []
-    # Loop for each character of the string
     for c in s:
-        # If left symbol is encountered
         if c in ['(', '{', '[']:
             leftSymbols.append(c)
         # If right symbol is encountered
