@@ -20,7 +20,6 @@ class Solution(object):
         
         # Traverse the input string
         for char in s:
-            # If it's a closing bracket
             if char in bracket_map:
                 top_element = stack.pop() if stack else '#'
                 
