@@ -18,7 +18,6 @@ def isValid(s: str) -> bool:
             leftSymbols.pop()
         elif c == ']' and len(leftSymbols) != 0 and leftSymbols[-1] == '[':
             leftSymbols.pop()
-        # If none of the valid symbols is encountered
         else:
             return False
     return leftSymbols == []
