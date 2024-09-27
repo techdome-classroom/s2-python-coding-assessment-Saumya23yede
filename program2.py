@@ -12,7 +12,6 @@ class Solution(object):
         :type s: str
         :rtype: int
         """
-        # Dictionary to store Roman numerals and their corresponding integer values
         roman_map = {
             'I': 1,
             'V': 5,
