@@ -31,9 +31,9 @@ class Solution(object):
         
         return total
 
-solution = Solution()
-print(solution.romanToInt("III"))      
-print(solution.romanToInt("LVIII"))     
-print(solution.romanToInt("MCMXCIV"))   
+# solution = Solution()
+# print(solution.romanToInt("III"))      
+# print(solution.romanToInt("LVIII"))     
+# print(solution.romanToInt("MCMXCIV"))   
 
 
