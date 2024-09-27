@@ -32,17 +32,15 @@ class Solution(object):
                 # It's an opening bracket, push onto the stack
                 stack.append(char)
         
-        # If the stack is empty, all brackets were matched
         return not stack
 
 # Test cases
 solution = Solution()
 print(solution.isValid("()"))         
 print(solution.isValid("()[]{}"))    
-print(solution.isValid("(]"))         # Output: False
-print(solution.isValid("([)]"))       # Output: False
-print(solution.isValid("{[]}"))       # Output: True
-
+print(solution.isValid("(]"))         
+print(solution.isValid("([)]"))       
+print(solution.isValid("{[]}"))       
 
 
 
