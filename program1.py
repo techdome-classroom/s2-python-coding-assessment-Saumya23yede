@@ -22,10 +22,8 @@ class Solution(object):
         for char in s:
             # If it's a closing bracket
             if char in bracket_map:
-                # Pop from stack if it's not empty, else use a dummy value '#'
                 top_element = stack.pop() if stack else '#'
                 
-                # Check if the popped bracket matches the corresponding opening bracket
                 if bracket_map[char] != top_element:
                     return False
             else:
